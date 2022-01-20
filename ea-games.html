@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ea games web site</title>
+</head>
+<body>
+    <!-- 
+    <input type="checkbox" id="check-log">
+    <label for="check-log" id="expand-btn">log</label>
+      -->
+    <main>
+        
+        <!--barra iniziale nera con log-->
+        <header>
+            <input type="checkbox" id="expand-toggle">         
+            <label class="logbtn" for="expand-toggle" id="expand-btn">Log</label>
+                <ul>
+                    <li>
+                        <div class="expandable">
+                            <a href="#">accedi</a>
+                            <a href="#">crea account</a>
+                        </div>        
+                    </li>
+                    <li>?</li>
+                    <li>
+                        <a href="https://www.ea.com/it-it">EA</a>
+                    </li>
+                </ul>
+        </header>
+        <!--nav bar con varie pagine , posizione fissa-->
+        <nav>
+            <!--tre puntini menu -->
+            <div id="bottone-figo">
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </div>
+            <!--ea logo-scritta in rosso-->
+            <div id="logo-on-navbar">
+                <a href="https://www.ea.com/it-it"><img src="./assets/ea-wordmark-network-nav-coral.svg" alt="EA-scritta"></a>
+            </div>
+            <!--varie pagine di navigazione con menu a tendina-->
+            <ul id="lista-a-tendina">
+                <li class="dropdown">
+                   <p class="dropbtn">Giochi</p>
+                    <div class="dropdown-content">
+                        <a href="#sub1">Sub1</a>
+                        <a href="#sub2">Sub2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                   <p class="dropbtn"> Altre esperienze</p>
+                   <div class="dropdown-content">
+                       <a href="#sub3">Sub3</a>
+                       <a href="#sub4">Sub4</a>
+                   </div>
+                </li>
+                <li class="dropdown">
+                    <p class="dropbtn">Informazioni</p>
+                    <div class="dropdown-content">
+                        <a href="#sub3">Sub5</a>
+                        <a href="#sub4">Sub6</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p class="dropbtn">Impegni</p>
+                    <div class="dropdown-content">
+                        <a href="#sub3">Sub7</a>
+                        <a href="#sub4">Sub8</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p class="dropbtn">Risorse</p>
+                    <div class="dropdown-content">
+                        <a href="#sub3">Sub9</a>
+                        <a href="#sub4">Sub10</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <p class="dropbtn">Lavora con noi</p>
+                    <div class="dropdown-content">
+                        <a href="#sub3">Sub11</a>
+                        <a href="#sub4">Sub12</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="immagine-sfondo">
+                <img src="./assets/bf-2042-hazard-zone-section-bg-homepage-hero-keyart-xl.jpg.adapt.1920w.jpg" alt="img-sfondo">    
+            </div>
+            <div class="immagine-scritta-bf">
+                <img src="./assets/bf-scritta.png" alt="scritta-bf2024">
+            </div>
+            <div class="scritta-sotto-immagine">
+                <p>Scopri la nuova ed entusiasmante esperienza multigiocatore, Battlefield™ <br> Hazard Zone!</p>
+            </div>
+            <div class="link-info">
+                <a href="https://www.ea.com/it-it/games/battlefield/battlefield-2042/game-overview/modes/battlefield-hazard-zone">Ulteriori informazioni</a>
+            </div>
+        </section>
+
+        
+    </main>
+    
+</body>
+</html>
